@@ -18,9 +18,9 @@
   </section>
 
   <section>
-    <h2>¿Hay un patrón según el día de la semana?</h2>
-    <div class="flourish-embed flourish-hierarchy" data-src="visualisation/24719156"></div>
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
+<h2>¿Hay un patrón según el día de la semana?</h2>
+<div class="flourish-embed flourish-chart" data-src="visualisation/24719156"></div>
+<script src="https://public.flourish.studio/resources/embed.js"></script>
   </section>
 
   <section>
