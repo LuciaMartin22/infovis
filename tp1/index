@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Exploración de mis datos personales</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      background-color: #fafafa;
+      color: #333;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    .chart {
+      margin: 40px 0;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    p {
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exploración visual de mis datos de celular 📱</h1>
+  <p>
+    Para este proyecto recolecté mis datos de uso de pantalla, 
+    diferenciando entre días de oficina y días libres. 
+    Analizo cuánto tiempo paso en aplicaciones como WhatsApp e Instagram, 
+    y cómo se relaciona con bloqueos y notificaciones.
+  </p>
+
+  <!-- Gráfico 1: Flourish -->
+  <div class="chart">
+    <h2>¿Uso más el celular los días de oficina o los días libres?</h2>
+    <iframe src="https://flo.uri.sh/visualisation/24719156/embed" 
+            title="Gráfico de Flourish"></iframe>
+    <p>
+      Este gráfico muestra la evolución de mi tiempo de pantalla y uso de apps a lo largo de varias semanas, 
+      diferenciando entre días de oficina y días libres.
+    </p>
+  </div>
+
+  <!-- Gráfico 2: RAWGraphs -->
+  <div class="chart">
+    <h2>¿Qué app consume más tiempo dentro de mi pantalla total?</h2>
+    <!-- Reemplazar por imagen exportada de RAWGraphs -->
+    <img src="rawgraphs.png" alt="Distribución de tiempo en apps" style="max-width:100%; border-radius:12px;">
+    <p>
+      Aquí se observa la proporción de tiempo destinado a WhatsApp e Instagram respecto al total de pantalla.
+    </p>
+  </div>
+
+  <!-- Gráfico 3: DataWrapper -->
+  <div class="chart">
+    <h2>¿Hay un patrón según el día de la semana?</h2>
+    <iframe title="Heatmap DataWrapper" 
+            src="https://datawrapper.dwcdn.net/XXXXX/" 
+            scrolling="no" frameborder="0"></iframe>
+    <p>
+      El heatmap refleja la intensidad de uso y notificaciones a lo largo de la semana.
+    </p>
+  </div>
+
+  <!-- Gráfico 4: Tableau -->
+  <div class="chart">
+    <h2>¿Más notificaciones implican más tiempo de pantalla?</h2>
+    <iframe src="https://public.tableau.com/views/TU_LINK" 
+            width="100%" height="600"></iframe>
+    <p>
+      En este scatterplot se explora la relación entre número de notificaciones y tiempo total de pantalla.
+    </p>
+  </div>
+
+  <h2>Conclusiones</h2>
+  <p>
+    A través de estas visualizaciones pude ver cómo el contexto (días de oficina vs libres) 
+    afecta mi uso del celular, y cómo WhatsApp es la aplicación que más peso tiene en mi tiempo de pantalla. 
+    Además, noté que las notificaciones parecen influir en cuánto uso el dispositivo.
+  </p>
+
+</body>
+</html>
