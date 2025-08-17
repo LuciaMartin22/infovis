@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exploración visual de mis datos de celular</title>
 </head>
 <body>
-    <h1>Tp 1</h1>
- <h1>Exploración visual de mis datos de celular 📱</h1>
-  <p>
-    Para este proyecto recolecté mis datos de uso de pantalla, 
-    diferenciando entre días de oficina y días libres. 
-    Analizo cuánto tiempo paso en aplicaciones como WhatsApp e Instagram, 
-    y cómo se relaciona con bloqueos y notificaciones.
-  </p>
- <h2>¿Hay un patrón según el día de la semana?</h2>
-  <div class="flourish-embed flourish-hierarchy" data-src="visualisation/24719156">
+  <header>
+    <h1>TP 1: Exploración visual de mis datos de celular 📱</h1>
+  </header>
+
+  <section>
+    <p>
+      Para este proyecto recolecté mis datos de uso de pantalla, diferenciando entre días de oficina y días libres. 
+      Analizo cuánto tiempo paso en aplicaciones como WhatsApp e Instagram, y cómo se relaciona con bloqueos y notificaciones.
+    </p>
+  </section>
+
+  <section>
+    <h2>¿Hay un patrón según el día de la semana?</h2>
+    <div class="flourish-embed flourish-hierarchy" data-src="visualisation/24719156"></div>
     <script src="https://public.flourish.studio/resources/embed.js"></script>
-  </div>
-  <h2>¿Qué app consume más tiempo dentro de mi pantalla total?</h2>
-  <h2>¿Uso más el celular los días de oficina o los días libres?</h2>
+  </section>
 
+  <section>
+    <h2>¿Qué app consume más tiempo dentro de mi pantalla total?</h2>
+    <div class="flourish-embed" data-src="visualisation/XXXXXXXX"></div>
+    <!-- Reemplaza XXXXXXXX por el ID de tu gráfico en Flourish -->
+  </section>
 
+  <section>
+    <h2>¿Uso más el celular los días de oficina o los días libres?</h2>
+    <div class="flourish-embed" data-src="visualisation/YYYYYYYY"></div>
+    <!-- Reemplaza YYYYYYYY por el ID de tu gráfico en Flourish -->
+  </section>
+  
 </body>
 </html>
