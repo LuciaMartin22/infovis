@@ -4,52 +4,82 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Exploración visual de mis datos de celular</title>
+<style>
+  body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
 
-  <style>
-    body {
-      background-color: #f0f4f8;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
+  header {
+    background: linear-gradient(135deg, #6c63ff, #a29bfe);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
 
-    header {
-      background-color: #6c63ff;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
+  h2 {
+    font-size: 1.6rem;
+    color: #6c63ff;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
-    h2 {
-      font-size: 1.5rem;
-      color: #6c63ff;
-      margin-top: 1.5rem;
-    }
+  section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
 
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+  section:hover {
+    transform: translateY(-4px);
+  }
 
-    p {
-      line-height: 1.6;
-    }
+  p {
+    line-height: 1.6;
+  }
 
-    iframe, .flourish-embed, .tableauPlaceholder, div[data-src] {
-      width: 100%;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-  </style>
+  iframe, .flourish-embed, .tableauPlaceholder, div[data-src] {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+
+  iframe:hover, .flourish-embed:hover, .tableauPlaceholder:hover {
+    transform: scale(1.02);
+  }
+
+  /* Fondos suaves diferentes por sección */
+  section:nth-of-type(1) { background-color: #fff0f5; }
+  section:nth-of-type(2) { background-color: #f0fff5; }
+  section:nth-of-type(3) { background-color: #fffaf0; }
+  section:nth-of-type(4) { background-color: #f0f8ff; }
+
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 2rem 0;
+  }
+</style>
+
 </head>
 
 <body>
