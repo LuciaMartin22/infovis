@@ -4,81 +4,91 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Exploración visual de mis datos de celular</title>
-<style>
-  body {
-    font-family: 'Nunito', sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
 
-  header {
-    background: linear-gradient(135deg, #6c63ff, #a29bfe);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
-  h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-  }
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-  h2 {
-    font-size: 1.6rem;
-    color: #6c63ff;
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
+    header {
+      background: linear-gradient(135deg, #6c63ff, #a29bfe);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
 
-  section {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    background-color: white;
-    border-radius: 16px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-  }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
 
-  section:hover {
-    transform: translateY(-4px);
-  }
+    h2 {
+      font-size: 1.6rem;
+      color: #6c63ff;
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
 
-  p {
-    line-height: 1.6;
-  }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
 
-  iframe, .flourish-embed, .tableauPlaceholder, div[data-src] {
-    width: 100%;
-    border-radius: 12px;
-    margin-top: 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-  }
+    section:hover {
+      transform: translateY(-4px);
+    }
 
-  iframe:hover, .flourish-embed:hover, .tableauPlaceholder:hover {
-    transform: scale(1.02);
-  }
+    p {
+      line-height: 1.6;
+    }
 
-  /* Fondos suaves diferentes por sección */
-  section:nth-of-type(1) { background-color: #fff0f5; }
-  section:nth-of-type(2) { background-color: #f0fff5; }
-  section:nth-of-type(3) { background-color: #fffaf0; }
-  section:nth-of-type(4) { background-color: #f0f8ff; }
+    iframe, .flourish-embed, .tableauPlaceholder, div[data-src] {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
 
+    iframe:hover, .flourish-embed:hover, .tableauPlaceholder:hover {
+      transform: scale(1.02);
+    }
 
-  hr {
-    border: none;
-    height: 1px;
-    background-color: #ccc;
-    margin: 2rem 0;
-  }
-</style>
+    /* Fondos suaves diferentes por sección */
+    section:nth-of-type(1) { background-color: #fff0f5; }
+    section:nth-of-type(2) { background-color: #f0fff5; }
+    section:nth-of-type(3) { background-color: #fffaf0; }
+    section:nth-of-type(4) { background-color: #f0f8ff; }
+
+    footer {
+      text-align:center; 
+      padding:1rem; 
+      background: linear-gradient(135deg, #6c63ff, #a29bfe); 
+      color:white;
+      font-weight: bold;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+      margin: 2rem 0;
+    }
+  </style>
 
 </head>
 
@@ -86,31 +96,94 @@
   <header>
     <h1>TP 1: Exploración visual de mis datos de celular 📱</h1>
   </header>
-  <section>
-    <p>
-      Para este proyecto recolecté mis datos de uso de pantalla, diferenciando entre días de oficina y días libres. 
-      Analizo cuánto tiempo paso en aplicaciones como WhatsApp e Instagram, y cómo se relaciona con bloqueos y notificaciones.
-    </p>
-   <h2>📱 ¿Cuánto tiempo paso frente a la pantalla cada día?</h2>
-    <p>El gráfico muestra cuánto tiempo paso frente al celular cada día de la semana. Los lunes suelen ser los de mayor uso, mientras que hacia el fin de semana el tiempo tiende a bajar. Es una primera foto que refleja cómo las rutinas y los distintos contextos influyen en mis distracciones digitales.</p>
-        <div class="flourish-embed flourish-chart" data-src="visualisation/24719156">
-          <script src="https://public.flourish.studio/resources/embed.js"></script>
-        </div>
-  <section>
-    <h2>📊 ¿Qué apps dominan mi tiempo en el celular?"</h2>
-        <p>El gráfico muestra la evolución diaria del uso del celular: desde el tiempo total de pantalla hasta las interacciones con apps específicas como WhatsApp e Instagram, además de los bloqueos de pantalla y la cantidad de notificaciones recibidas. Se puede ver cómo las notificaciones y los bloqueos acompañan los picos de uso, marcando momentos de mayor distracción o conexión.</p>
-       <div style="min-height:547px" id="datawrapper-vis-PodZR"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/PodZR/embed.js" charset="utf-8" data-target="#datawrapper-vis-PodZR"></script></div>
-    <p>A mayor cantidad de notificaciones y bloqueos de pantalla, tiende a aumentar el tiempo total de uso del celular. WhatsApp aparece como la app con más peso en esas variaciones, mientras que Instagram se mantiene más estable.</p>
-  </section>
-  <section>
-    <h2>💼¿Uso el celular distinto en días de oficina y en días libres?</h2>
-   <p>El gráfico muestra la relación entre el tiempo de pantalla (tamaño), la cantidad de notificaciones (color) y la modalidad del día (oficina o no oficina)</p> 
-<iframe src="Jerarquia-home office.svg" width="800" height="600"></iframe>
-<p>En los días de oficina paso más tiempo conectada, en particular los Lunes el día que voy sola a la oficina. En los días libres, el uso tiende a ser menor.</p>
-  </section>
-     <section>
-  <h1>¿El cambio en mi uso del celular depende de una app en particular?/h1>
-<div class='tableauPlaceholder' id='viz1756420301306' style='position: relative'><noscript><a href='#'><img alt='Uso del celular ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;Usodelcelular_17564202844110&#47;Hoja3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Usodelcelular_17564202844110&#47;Hoja3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;Usodelcelular_17564202844110&#47;Hoja3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1756420301306');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> </section>
-  <p>En los días de oficina el uso del celular aumenta en general, pero sin que una aplicación en particular (Instagram o WhatsApp) se dispare por encima del resto.</p>
+
+  <main>
+    <section>
+      <p>
+        Para este proyecto recolecté mis datos de uso de pantalla, diferenciando entre días de oficina y días libres. 
+        Analizo cuánto tiempo paso en aplicaciones como WhatsApp e Instagram, y cómo se relaciona con bloqueos y notificaciones.
+      </p>
+
+      <h2>📱 ¿Cuánto tiempo paso frente a la pantalla cada día?</h2>
+      <p>
+        El gráfico muestra cuánto tiempo paso frente al celular cada día de la semana. Los lunes suelen ser los de mayor uso, mientras que hacia el fin de semana el tiempo tiende a bajar. 
+        Es una primera foto que refleja cómo las rutinas y los distintos contextos influyen en mis distracciones digitales.
+      </p>
+      <div class="flourish-embed flourish-chart" data-src="visualisation/24719156">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+      </div>
+    </section>
+
+    <section>
+      <h2>📊 ¿Qué apps dominan mi tiempo en el celular?</h2>
+      <p>
+        El gráfico muestra la evolución diaria del uso del celular: desde el tiempo total de pantalla hasta las interacciones con apps específicas como WhatsApp e Instagram, además de los bloqueos de pantalla y la cantidad de notificaciones recibidas. 
+        Se puede ver cómo las notificaciones y los bloqueos acompañan los picos de uso, marcando momentos de mayor distracción o conexión.
+      </p>
+      <div style="min-height:547px" id="datawrapper-vis-PodZR">
+        <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/PodZR/embed.js" charset="utf-8" data-target="#datawrapper-vis-PodZR"></script>
+      </div>
+      <p>
+        A mayor cantidad de notificaciones y bloqueos de pantalla, tiende a aumentar el tiempo total de uso del celular. WhatsApp aparece como la app con más peso en esas variaciones, mientras que Instagram se mantiene más estable.
+      </p>
+    </section>
+
+    <section>
+      <h2>💼 ¿Uso el celular distinto en días de oficina y en días libres?</h2>
+      <p>
+        El gráfico muestra la relación entre el tiempo de pantalla (tamaño), la cantidad de notificaciones (color) y la modalidad del día (oficina o no oficina)
+      </p> 
+      <iframe src="Jerarquia-home office.svg" width="800" height="600"></iframe>
+      <p>
+        En los días de oficina paso más tiempo conectada, en particular los lunes el día que voy sola a la oficina. En los días libres, el uso tiende a ser menor.
+      </p>
+    </section>
+
+    <section>
+      <h2>📈 ¿El cambio en mi uso del celular depende de una app en particular?</h2>
+
+      <!-- AQUÍ DEJAMOS EL EMBED DE TABLEAU IGUAL QUE ANTES -->
+      <div class='tableauPlaceholder' id='viz1756420301306' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='Uso del celular ' src='https://public.tableau.com/static/images/Us/Usodelcelular_17564202844110/Hoja3/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> 
+          <param name='site_root' value='' />
+          <param name='name' value='Usodelcelular_17564202844110/Hoja3' /> 
+          <param name='tabs' value='no' /> 
+          <param name='toolbar' value='yes' /> 
+          <param name='static_image' value='https://public.tableau.com/static/images/Us/Usodelcelular_17564202844110/Hoja3/1.png' /> 
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='es-ES' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1756420301306');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';
+        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+
+      <p>
+        En los días de oficina el uso del celular aumenta en general, pero sin que una aplicación en particular (Instagram o WhatsApp) se dispare por encima del resto.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Hecho por Lucía Martín - 2025
+  </footer>
 </body>
 </html>
