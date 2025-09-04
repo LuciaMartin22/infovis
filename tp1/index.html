@@ -39,21 +39,20 @@
       gap: 0.5rem;
     }
 
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      padding: 1rem;
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
+section {
+  max-width: 900px;
+  margin: 2rem auto;   /* que siempre tenga el mismo margen */
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
-    section:hover {
-      transform: translateY(-4px);
-      margin: 0; /* elimina el espacio entre secciones */
-    }
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
 
     p {
       line-height: 1.6;
@@ -138,19 +137,16 @@
         A mayor cantidad de notificaciones y bloqueos de pantalla, tiende a aumentar el tiempo total de uso del celular. WhatsApp aparece como la app con más peso en esas variaciones, mientras que Instagram se mantiene más estable.
       </p>
     </section>
-
-    <section>
-      <h2>💼 ¿Uso el celular distinto en días de oficina y en días libres?</h2>
-      <p>
-        El gráfico muestra la relación entre el tiempo de pantalla (tamaño), la cantidad de notificaciones (color) y la modalidad del día (oficina o no oficina)
-      </p> 
-      <iframe src="Jerarquia-home office.svg" width="800" height="600"></iframe>
-      </p>
-      <iframe src="Jerarquia-home office.svg" width="100%" height="600"></iframe>
-      <p>
-        En los días de oficina paso más tiempo conectada, en particular los lunes el día que voy sola a la oficina. En los días libres, el uso tiende a ser menor.
-      </p>
-    </section>
+     <section>
+  <h2>💼 ¿Uso el celular distinto en días de oficina y en días libres?</h2>
+  <p>
+    El gráfico muestra la relación entre el tiempo de pantalla (tamaño), la cantidad de notificaciones (color) y la modalidad del día (oficina o no oficina).
+  </p> 
+  <iframe src="Jerarquia-home-office.svg" width="100%" height="600"></iframe>
+  <p>
+    En los días de oficina paso más tiempo conectada, en particular los lunes el día que voy sola a la oficina. En los días libres, el uso tiende a ser menor.
+  </p>
+</section>
 
     <section>
       <h2>📈 ¿El cambio en mi uso del celular depende de una app en particular?</h2>
